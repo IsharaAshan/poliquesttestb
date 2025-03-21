@@ -1,0 +1,278 @@
+{
+    "id": "c1101200-32e1-4f02-9f9c-26871b1fd1cc",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "GameOver",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "bbd69a56-c70c-4934-ba24-9247447ab41f",
+            "label": "background",
+            "texture": {
+                "key": "background"
+            },
+            "x": 640,
+            "y": 366,
+            "scaleY": 1.2
+        },
+        {
+            "type": "Sprite",
+            "id": "b478b5c5-7c95-4e00-897d-5895a4fa1aa2",
+            "label": "playerholderSprite",
+            "texture": {
+                "key": "playerstand",
+                "frame": 0
+            },
+            "x": 232,
+            "y": 540,
+            "scaleX": 1.444944303492753,
+            "scaleY": 1.444944303492753,
+            "animationPlayMethod": 1,
+            "animationKey": "playerstandplayerstand"
+        },
+        {
+            "type": "Image",
+            "id": "ccce5403-5585-4a26-8998-ed50274c6fad",
+            "label": "gameOverTextDisplay",
+            "scope": "PUBLIC",
+            "texture": {
+                "key": "gameOver"
+            },
+            "x": 640,
+            "y": 89
+        },
+        {
+            "type": "Container",
+            "id": "d24b6b40-339f-4dc2-9b43-3d230869b94d",
+            "label": "leaderboard_container",
+            "scope": "PUBLIC",
+            "x": 1067,
+            "y": 118,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "79f60834-f6f7-4db9-b90a-35ae98a5ac75",
+                    "label": "leaderboardbackgroud",
+                    "y": 317,
+                    "scaleX": 2.449803091586994,
+                    "scaleY": 4.104804057027134,
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.75,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Text",
+                    "id": "af096c56-f8c0-4b27-977c-5441ac3ff702",
+                    "label": "leaderboardText",
+                    "x": -131,
+                    "y": 3,
+                    "text": "Leaderboard\n",
+                    "fontFamily": "ApexMk2-BoldExtended",
+                    "fontSize": "36px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "c60d7120-3d40-4ebe-84d6-551e9614ddac",
+                    "label": "LeaderboardTableName",
+                    "scope": "PUBLIC",
+                    "x": -140,
+                    "y": 74,
+                    "text": "NAME",
+                    "fontFamily": "ApexMk2-BoldExtended",
+                    "fontSize": "24px"
+                },
+                {
+                    "type": "Text",
+                    "id": "9bdb8033-419f-40b9-8c99-7824a5be4d1a",
+                    "label": "LeaderboardTablescorename",
+                    "scope": "PUBLIC",
+                    "x": 56,
+                    "y": 74,
+                    "text": "SCORE\n",
+                    "fontFamily": "ApexMk2-BoldExtended",
+                    "fontSize": "24px"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "59217d0d-3c55-4003-a533-cdc13e6941cf",
+            "label": "finalscore_container",
+            "scope": "PUBLIC",
+            "x": 550,
+            "y": 185,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "cca5964e-073a-4052-8b66-d101a8230e6c",
+                    "label": "scorevalue",
+                    "scope": "PUBLIC",
+                    "x": 23,
+                    "y": 54,
+                    "text": "0000",
+                    "align": "center",
+                    "fontFamily": "ApexMk2-BoldExtended",
+                    "fontSize": "50px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "322dbf05-2497-424e-a82c-e5d166b4892d",
+                    "label": "Score",
+                    "text": "SCORE\n",
+                    "fontFamily": "ApexMk2-BoldExtended",
+                    "fontSize": "55px",
+                    "color": "#000000ff"
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "190ec1b6-4f69-47a1-b81d-9f74f935ec4f",
+            "label": "restartbutton",
+            "scope": "PUBLIC",
+            "texture": {
+                "key": "Restart_1"
+            },
+            "x": 640,
+            "y": 574
+        },
+        {
+            "type": "Image",
+            "id": "b216f8c8-fb9e-4c9b-8eda-e6b963cb127d",
+            "label": "home_button",
+            "scope": "PUBLIC",
+            "texture": {
+                "key": "Home"
+            },
+            "x": 640,
+            "y": 642
+        },
+        {
+            "type": "Container",
+            "id": "30068304-0048-4ea4-a54a-0a5656366de2",
+            "label": "log_container",
+            "scope": "CLASS",
+            "x": 640,
+            "y": 426,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "38f550a8-70ab-41a8-aabe-5c20363a3900",
+                    "label": "1",
+                    "y": -116,
+                    "scaleX": 4.324049219274585,
+                    "scaleY": 2.9380197156913215,
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Image",
+                    "id": "436e95b9-96c1-4e71-92f1-182301decdc3",
+                    "label": "image",
+                    "texture": {
+                        "key": "InputField"
+                    },
+                    "y": -14,
+                    "visible": false
+                },
+                {
+                    "type": "Text",
+                    "id": "0dfc0809-91e8-448d-b08d-c8129ce85fed",
+                    "label": "input_field_bsc_adress",
+                    "scope": "PUBLIC",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.width": 404,
+                    "hitArea.height": 46,
+                    "scaleX": 0,
+                    "scaleY": 0,
+                    "fixedWidth": 407,
+                    "fixedHeight": 46,
+                    "align": "center",
+                    "fontFamily": "Oswald-SemiBold",
+                    "fontSize": "18px",
+                    "maxLines": 5
+                },
+                {
+                    "type": "Text",
+                    "id": "0b17194d-7bb6-4c98-8b50-942cf70d2517",
+                    "label": "input_field_nick_name",
+                    "scope": "PUBLIC",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.width": 280,
+                    "hitArea.height": 32,
+                    "scaleX": 0,
+                    "scaleY": 0,
+                    "fixedWidth": 280,
+                    "fixedHeight": 32,
+                    "align": "center",
+                    "fontFamily": "Oswald-SemiBold",
+                    "fontSize": "25px"
+                },
+                {
+                    "type": "Image",
+                    "id": "65ac4f47-2271-4208-a81c-4a36307cbded",
+                    "label": "image_1",
+                    "texture": {
+                        "key": "InputField"
+                    },
+                    "y": -156,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "091a892d-32b3-469d-9b30-29b451a44ac7",
+                    "label": "submit",
+                    "scope": "PUBLIC",
+                    "texture": {
+                        "key": "Submitbutton"
+                    },
+                    "x": -1,
+                    "y": 4
+                },
+                {
+                    "type": "Image",
+                    "id": "357e67ba-26c3-4526-8aa3-b4ed0fe3e72e",
+                    "label": "closebutton_log_container",
+                    "scope": "PUBLIC",
+                    "texture": {
+                        "key": "closebutton"
+                    },
+                    "x": 236,
+                    "y": -277,
+                    "scaleX": 0.3,
+                    "scaleY": 0.3
+                },
+                {
+                    "type": "Text",
+                    "id": "9e348441-41c2-4f66-b82f-fe99b3dec948",
+                    "label": "log_container_msg",
+                    "scope": "PUBLIC",
+                    "x": -169,
+                    "y": -268,
+                    "fontFamily": "ApexMk2-BoldExtended"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
